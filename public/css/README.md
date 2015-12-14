@@ -1,2 +1,0 @@
-# jpweb
-jp web repository
