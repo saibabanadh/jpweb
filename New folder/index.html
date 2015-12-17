@@ -4,9 +4,10 @@
 	<title>index</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
 
   	<style>
   	.navbar{
@@ -57,7 +58,27 @@
       min-height: 250px;
       border: 1px solid #f3f3f3;
     }
-  	</style>
+    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+    .fade-in {
+      opacity:0;
+      -webkit-animation:fadeIn ease-in 1;
+      -webkit-animation-fill-mode:forwards;
+      -webkit-animation-duration:1s;
+    }
+    .fade-in.one {
+      -webkit-animation-delay: 0.7s;
+    }
+    .fade-in.two {
+      -webkit-animation-delay: 1.2s;
+    }
+    .fade-in.three {
+      -webkit-animation-delay: 1.6s;
+    }
+    .fade-in.four {
+      -webkit-animation-delay: 2.0s;
+    }
+    </style>
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -84,25 +105,25 @@
           </div>
           <div class="panel-body">
             <div class="list-group">
-            <a href="#" class="list-group-item active">
+            <a href="#" class="list-group-item active fade-in one">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
            <div class="list-group">
-            <a href="#" class="list-group-item active">
+            <a href="#" class="list-group-item active fade-in two">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
           <div class="list-group">
-            <a href="#" class="list-group-item active">
+            <a href="#" class="list-group-item active fade-in three">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
           <div class="list-group">
-            <a href="#" class="list-group-item active">
+            <a href="#" class="list-group-item active fade-in four">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
@@ -117,26 +138,26 @@
             facebook
           </div>
           <div class="panel-body">
-            <div class="list-group">
-            <a href="#" class="list-group-item active">
+            <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in one">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
-           <div class="list-group">
-            <a href="#" class="list-group-item active">
+           <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in two">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
+          <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in three">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
+          <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in four">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
@@ -151,26 +172,26 @@
             twitter
           </div>
           <div class="panel-body">
-            <div class="list-group">
-            <a href="#" class="list-group-item active">
+            <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in one">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
-           <div class="list-group">
-            <a href="#" class="list-group-item active">
+           <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in two">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
+          <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in three">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
+          <div class="list-group ">
+            <a href="#" class="list-group-item active fade-in four">
               <h4 class="list-group-item-heading">List group item heading</h4>
               <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
@@ -181,5 +202,6 @@
     </div>
   </div>
 
+  
 </body>
 </html>
