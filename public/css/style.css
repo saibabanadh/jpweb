@@ -13,6 +13,10 @@ html, body{
 	font-size: 100%;
     background:#fff; 
 }
+#wrapper{
+    width: 100%;
+    
+}
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -32,6 +36,8 @@ body a{
 .navbar {
    min-height:100%;
    margin-bottom:0;
+   border-radius: 0;
+   border: 1px solid #f15f43;
 }
 .navbar-nav {
    margin: 18px 0 0 0;
@@ -357,7 +363,7 @@ ul.list_1 li a, ul.list_2 li a{
 }
 .footer_bottom{
 	padding:2em 0;
-	background:#333;
+	background:#2e353d;
 }
 .footer_text p{
 	color: #fff;
@@ -665,13 +671,29 @@ span.m_2{
     padding: 5px 20px;
     font-family: 'Roboto', sans-serif;
 }
+.button a span{
+    line-height: 2.2em;
+    display: block;
+}
+.button a.tw{
+    background: #1daee3;
+    float: left;
+}
+.button a.fb{
+    background: #3b5998;
+    float: left;
+}
+.button a.go{
+    background: #d34836;
+    margin: 0;
+    float: left;
+}
 .textbox-wrap {
     margin-bottom: 1em;
 }
 input.form-control {
     box-shadow: none;
     background-color:#fff;
-    padding:20px;
     border-radius:0px;
 }
 .input-group-addon {
@@ -2199,7 +2221,7 @@ a.navbar-brand img {
 .btn2 {
     padding: 6px 10px;
     font-size: 0.8125em;
-}   
+}
 #search_form h1 {
     font-size: 1.4em;
 }
