@@ -69,7 +69,7 @@
   <div class="nav-side-menu">
     <div class="menu-list">
       <ul id="menu-content" class="menu-content collapse out">
-        <li><a href="#">Overview</a></li>
+        <li><a href="overview.html">Overview</a></li>
         <li><a href="basicprofile.html">Basic Profile</a></li>
         <li><a href="summary.html">Profile Summary</a></li>  
         <li><a href="skills.html">Skills</a></li>
@@ -80,38 +80,79 @@
     </div>
   </div>
 
-
   <div id='page-wrapper'>
     <div id='page-inner'>
       <div class="row">
         <div class="col-md-12">
-          <h2 class="pageheader">Profile Summary</h2>
-      
+          <h2 class="pageheader">IT Skills</h2>
+          <form role='form'>
+            <div>
+              <h5>You should mention all the important programming languages and software packages that you have expertise in.</h5>
+            </div>
+            <table class='skilltable'>
+              <tbody class='skill input_fields_wrap'>
+                <tr>
+                  <td><strong>Skills</strong></td>
+                  <td><strong>Relevant Experience</strong></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
+                </tr>
+              </tbody>
+            </table>  
+          </form><br>
           <div>
-            <h5>Your Profile Summary should mention the highlights of your career and education, what your professional interests are, and what kind of a career you are looking for.</h5><br>
-          </div>  
-            <form role='form'>
-              <div class="form-group">
-                <label for='summary' style='font-weight:bold'>Profile Summary:</label>
-                <textarea class="form-control" rows='12' id='summary'></textarea>
-              </div>
-            </form>
+            <button class='btn btn-primary add_field_button'>Add Another Skill</button> 
           </div>
           <div class="next">
               <button class='btn btn-primary'>Save Changes</button>
               <button class="btn">Cancel</button>
-          </div>
+            </div>
         </div>
       </div>
     </div>
-  </div>  
-
+  </div><br><br><br>
   
   <div class="footer_bottom"> 
-      <div class="copy">
+    <div class="copy">
       <p>Copyright © 2015 Seeking . All Rights Reserved . Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
     </div>
-    </div>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+    var max_fields      = 10;
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<tr><td><input class="form-control"/></td><td><input class="form-control"/></td><td><a href="#" class="remove_field">Remove</a></td></tr>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('tr').remove(); x--;
+    })
+});
+  </script>
 </body>
 </html>
  
+  

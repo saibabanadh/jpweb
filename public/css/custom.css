@@ -90,22 +90,13 @@ ul.list_2 li{
   font-size: 14px;
   font-weight: 600;
 }
-.form{
-  border-bottom: 1px dashed #ccc;
-  margin-bottom: 5%;
-}
-.mgn-lft{
-  margin-left: 5%;
-}
-.frm-row{
-  float: left;
-  width: 120px;
-  margin-right: 7px;
+/*education*/
+.group label{
+  width: 25%;
   text-align: right;
-  line-height: 24px;
 }
 .custom{
-  font-size: 14px;
+  margin-left: 1%
 }
 .custom-select{
   float: left;
@@ -129,6 +120,16 @@ ul.list_2 li{
 .w70{
   width: 70%;
   font-size: 12px;
+}
+/*projects*/
+.grp label{
+  text-align: right;
+  font-weight: 600;
+  line-height: 24px;
+}
+/*others*/
+.skill td{
+padding: 8px 4px;
 }
 @media(max-width: 870px){
   .mgn-lft{

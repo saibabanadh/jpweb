@@ -85,33 +85,106 @@
     <div id='page-inner'>
       <div class="row">
         <div class="col-md-12">
-          <h2 class="pageheader">Profile Summary</h2>
-      
-          <div>
-            <h5>Your Profile Summary should mention the highlights of your career and education, what your professional interests are, and what kind of a career you are looking for.</h5><br>
-          </div>  
-            <form role='form'>
-              <div class="form-group">
-                <label for='summary' style='font-weight:bold'>Profile Summary:</label>
-                <textarea class="form-control" rows='12' id='summary'></textarea>
+          <h2 class="pageheader">Other Details</h2>
+          <div><h5><strong>Languages Known</strong></h5></div>
+          
+            <table class='skill'>
+              <tbody>
+                <tr>
+                  <td width='125'>Language</td>
+                  <td width='125'>Proficiency</td>
+                </tr>
+                <tr>
+                  <td><input type='text' size='13' style='font-size:12px'></td>
+                  <td>
+                    <select>
+                      <option>Select</option>
+                      <option>Beginner</option>
+                      <option>Proficient</option>
+                      <option>Expert</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type='text' size='13' style='font-size:12px'></td>
+                  <td>
+                    <select>
+                      <option>Select</option>
+                      <option>Beginner</option>
+                      <option>Proficient</option>
+                      <option>Expert</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type='text' size='13' style='font-size:12px'></td>
+                  <td>
+                    <select>
+                      <option>Select</option>
+                      <option>Beginner</option>
+                      <option>Proficient</option>
+                      <option>Expert</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type='text' size='13' style='font-size:12px'></td>
+                  <td>
+                    <select>
+                      <option>Select</option>
+                      <option>Beginner</option>
+                      <option>Proficient</option>
+                      <option>Expert</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <form role='form' class='form-horizontal'>
+              <h5><strong>Desired Job Details</strong></h5><br>   
+              <div class='form-group'>
+                <label class='col-sm-2' for='lctn'>Job Type:</label>
+                <div class='col-sm-10'>
+                  <input type='checkbox'><small> Permanent</small>
+                  <input type='checkbox' style='margin-left:2%'><small> Temporary/Contractual</small>
+                </div>
               </div>
+              <div class='form-group'>
+                <label class='col-sm-2' for='lctn'>Employment Type:</label>
+                <div class='col-sm-10'>
+                  <input type='checkbox'><small> Full Time</small> 
+                  <input type='checkbox' style='margin-left:2%'><small> Part Time</small> 
+                </div>
+              </div><br>
+              <h5><strong>Affirmative Action</strong></h5><br>
+              <div class='form-group'>
+                <label class='col-sm-2' for='lctn'>Physically Challenged:</label>
+                <div class='col-sm-10'>
+                  <input type='radio' name='lctn'><small> Yes</small>
+                  <input type='radio' name='lctn' style='margin-left:2%'><small> No</small> 
+                </div>
+              </div>
+              <div class='form-group'>
+              <label for='lctn' class="col-sm-2">Description:</label>
+              <div class="col-sm-10">
+                <textarea id='lctn' rows='3' style='width:30%'></textarea>
+              </div>
+            </div>
+            
             </form>
           </div>
-          <div class="next">
-              <button class='btn btn-primary'>Save Changes</button>
-              <button class="btn">Cancel</button>
-          </div>
+          <div class="next" style='margin-right:20px;'>
+            <button class='btn btn-primary'>Save Changes</button>
+            <button class="btn">Cancel</button>
         </div>
       </div>
     </div>
-  </div>  
-
-  
+  </div><br>
   <div class="footer_bottom"> 
-      <div class="copy">
+    <div class="copy">
       <p>Copyright © 2015 Seeking . All Rights Reserved . Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
     </div>
-    </div>
+  </div>
 </body>
-</html>
- 
+</html>  

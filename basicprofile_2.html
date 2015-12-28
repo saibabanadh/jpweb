@@ -69,7 +69,7 @@
   <div class="nav-side-menu">
     <div class="menu-list">
       <ul id="menu-content" class="menu-content collapse out">
-        <li><a href="#">Overview</a></li>
+        <li><a href="overview.html">Overview</a></li>
         <li><a href="basicprofile.html">Basic Profile</a></li>
         <li><a href="summary.html">Profile Summary</a></li>  
         <li><a href="skills.html">Skills</a></li>
@@ -85,28 +85,55 @@
     <div id='page-inner'>
       <div class="row">
         <div class="col-md-12">
-          <h2 class="pageheader">Profile Summary</h2>
-      
-          <div>
-            <h5>Your Profile Summary should mention the highlights of your career and education, what your professional interests are, and what kind of a career you are looking for.</h5><br>
-          </div>  
+          <h2 class="page-header">Basic Profile</h2>
+          <div class="col-md-offset-2">
             <form role='form'>
-              <div class="form-group">
-                <label for='summary' style='font-weight:bold'>Profile Summary:</label>
-                <textarea class="form-control" rows='12' id='summary'></textarea>
+              <div class="form-group w33" style='float:left'>
+                <label for='firstname'>FirstName<span class="req">*</span></label>
+                <input class="form-control" id='firstname'>
+              </div>
+              <div class="form-group w33 group">
+                <label for='lastname'>Last Name<span class="req">*</span></label>
+                <input class="form-control" id='lastname'>
+              </div>
+              <div class="form-group w33" style='float:left'>
+                <label for='firstname'>Email<span class="req">*</span></label>
+                <input class="form-control">
+              </div>
+              <div class="form-group w33 group">
+                <label for='mobile'>Mobile<span class="req">*</span></label>
+                <input class="form-control" id='mobile'> 
+              </div>
+              <div class="form-group w33" style='width:71%'>
+                <label for='address'>Address<span class="req">*</span></label>
+                <input class="form-control" id='address'>
+              </div>
+              <div class="form-group w33" style='float:left'>
+                <label for='city'>City<span class="req">*</span></label>
+                <input class="form-control" id='city'>
+              </div>
+              <div class="form-group w33 group">
+                <label for='state'>State<span class="req">*</span></label>
+                <input class="form-control" id='state'>
+              </div>
+              <div class="form-group w33" style='float:left'>
+                <label for='country'>Country<span class="req">*</span></label>
+                <input class="form-control" id='country'>
+              </div>
+              <div class="form-group w33 group">
+                <label for='pin'>Pincode<span class="req">*</span></label>
+                <input class="form-control" id='pin'>
               </div>
             </form>
           </div>
-          <div class="next">
-              <button class='btn btn-primary'>Save Changes</button>
-              <button class="btn">Cancel</button>
-          </div>
         </div>
+        <div class="next">
+            <button class="btn btn-primary">Save</button>
+          </div>
       </div>
     </div>
-  </div>  
-
-  
+  </div>
+ 
   <div class="footer_bottom"> 
       <div class="copy">
       <p>Copyright © 2015 Seeking . All Rights Reserved . Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
