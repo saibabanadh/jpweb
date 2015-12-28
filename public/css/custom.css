@@ -17,8 +17,9 @@ ul.list_2 li{
   background-color: #2e353d;
   position: absolute;
   width: 210px;
-  min-height: 100%;
   color: #e1ffff;
+  bottom: 0;
+  top: 80px;
 
 }
 .nav-side-menu .toggle-btn {
@@ -48,11 +49,7 @@ ul.list_2 li{
   text-decoration: none;
   color: #e1ffff;
   font-size: 15px;
-}
-.nav-side-menu li a i {
-  padding-left: 10px;
-  width: 20px;
-  padding-right: 20px;
+  display: block;
 }
 .nav-side-menu li:hover {
   border-left: 3px solid #d19b3d;
@@ -78,12 +75,15 @@ ul.list_2 li{
   border-bottom: 1px solid #ffb812;
 }
 .form-group label{
-  font-weight: 100;
   font-size: 14px;
   color: #666666;
 }
-.form-group .form-control{
-  width: 95%; 
+.w33{
+  width: 33%;
+}
+.mgn-lft{
+  float: left;
+  margin-left: 5%;
 }
 .req{
   color: #3399cc;
@@ -182,4 +182,5 @@ padding: 8px 4px;
 body {
   margin: 0px;
   padding: 0px;
+  position: relative;
 }

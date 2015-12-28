@@ -69,7 +69,7 @@
   <div class="nav-side-menu">
     <div class="menu-list">
       <ul id="menu-content" class="menu-content collapse out">
-        <li><a href="#">Overview</a></li>
+        <li><a href="overview.html">Overview</a></li>
         <li><a href="basicprofile.html">Basic Profile</a></li>
         <li><a href="summary.html">Profile Summary</a></li>  
         <li><a href="skills.html">Skills</a></li>
@@ -90,32 +90,32 @@
               <h5>You should mention all the important programming languages and software packages that you have expertise in.</h5>
             </div>
             <table class='skilltable'>
-              <tbody class='skill'>
+              <tbody class='skill input_fields_wrap'>
                 <tr>
-                  <td width='206'><strong>Skills</strong></td>
-                  
+                  <td><strong>Skills</strong></td>
+                  <td><strong>Relevant Experience</strong></td>
                 </tr>
                 <tr>
-                  <td><input type='text' class='w180'></td>
-                  
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
                 </tr>
                 <tr>
-                  <td><input type='text' class='w180'></td>
-                  
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
                 </tr>
                 <tr>
-                  <td><input type='text' class='w180'></td>
-                  
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
                 </tr>
                 <tr>
-                  <td><input type='text' class='w180'></td>
-                  
+                  <td><input class="form-control"></td>
+                  <td><input class="form-control"></td>
                 </tr>
               </tbody>
             </table>  
           </form><br>
           <div>
-            <button class='btn btn-primary'>Add Another Skill</button>
+            <button class='btn btn-primary add_field_button'>Add Another Skill</button> 
           </div>
           <div class="next">
               <button class='btn btn-primary'>Save Changes</button>
@@ -131,6 +131,27 @@
       <p>Copyright © 2015 Seeking . All Rights Reserved . Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
     </div>
   </div>
+
+  <script>
+  $(document).ready(function() {
+    var max_fields      = 10;
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<tr><td><input class="form-control"/></td><td><input class="form-control"/></td><td><a href="#" class="remove_field">Remove</a></td></tr>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('tr').remove(); x--;
+    })
+});
+  </script>
 </body>
 </html>
  
