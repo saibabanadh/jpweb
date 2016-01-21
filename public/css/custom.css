@@ -105,7 +105,7 @@ ul.list_2 li{
   text-align: center;
 }
 .next>.btn, .next>.btn:hover{
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   outline: none!important;
   transition: all ease 0.5s;
 }
@@ -130,11 +130,6 @@ ul.list_2 li{
 /*others*/
 .skill td{
 padding: 8px 4px;
-}
-@media(max-width: 870px){
-  .mgn-lft{
-    margin-left: 0;
-  }
 }
 @media(max-width: 835px){
   #page-wrapper{
@@ -169,9 +164,7 @@ padding: 8px 4px;
   #page-wrapper{
     margin: 0;
   }
-  .form-group .form-control{
-  width: 100%; 
-}
+
 
 }
 @media (min-width: 768px) {

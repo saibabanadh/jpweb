@@ -9,6 +9,7 @@
   <script src="public/js/bootstrap.min.js"></script>
   <link href="public/css/style.css" rel='stylesheet' type='text/css' />
   <link href="public/css/custom.css" rel='stylesheet' type='text/css' />
+  <link href="public/css/simple-sidebar.css" rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
   <link href="public/css/font-awesome.css" rel="stylesheet">
 </head>
@@ -58,7 +59,6 @@
                   <li><a href="#">Shortcodes</a></li>
                  </ul>
             </li>
-            <li><a href="resume.html">Upload Resume</a></li>
             <li><a href="login.html"><span class='fa fa-key'></span> Login</a></li>
           </ul>
       </div>
@@ -66,99 +66,102 @@
     </div>
   </nav>
 
-  <div class="nav-side-menu">
-    <div class="menu-list">
-      <ul id="menu-content" class="menu-content collapse out">
+  <div id='wrapper' class='nav-side-bar'>
+    <div id='sidebar-wrapper'>
+      <ul class="sidebar-nav">
         <li><a href="overview.html">Overview</a></li>
         <li><a href="basicprofile.html">Basic Profile</a></li>
+        <li><a href="picture.html">Profile Picture</a></li>
         <li><a href="summary.html">Profile Summary</a></li>  
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="education.html">Education</a></li>
+        <li><a href="uploadresume.html">Upload Resume</a></li>
         <li><a href="others.html">Others</a></li>
       </ul>
     </div>
-  </div>
+  
 
 
-  <div id='page-wrapper'>
-    <div id='page-inner'>
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="page-header">Basic Profile</h2>
-          <div class='col-md-offset-2'>       
-            <form role='form'>
-              <div class="form-group w33" style='float:left'>
-                <label for='firstname'>FirstName<span class="req">*</span></label>
-                <input class="form-control" id='firstname'>
-              </div>
-              <div class="form-group w33 mgn-lft">
-                <label for='lastname'>Last Name<span class="req">*</span></label>
-                <input class="form-control" id='lastname'>
-              </div>
-              <div class="form-group w33" style='float:left'>
-                <label for='firstname'>Email<span class="req">*</span></label>
-                <input class="form-control">
-              </div>
-              <div class="form-group w33 mgn-lft">
-                <label for='mobile'>Mobile<span class="req">*</span></label>
-                <input class="form-control" id='mobile'> 
-              </div>
-              <div class="form-group w33" style='width:71%'>
-                <label for='address'>Present Address<span class="req">*</span></label>
-                <input class="form-control" id='address'>
-              </div>
-              <div class="form-group w33" style='float:left'>
-                <label for='city'>City<span class="req">*</span></label>
-                <input class="form-control" id='city'>
-              </div>
-              <div class="form-group w33 mgn-lft">
-                <label for='state'>State<span class="req">*</span></label>
-                <input class="form-control" id='state'>
-              </div>
-              <div class="form-group w33" style='float:left'>
-                <label for='country'>Country<span class="req">*</span></label>
-                <input class="form-control" id='country'>
-              </div>
-              <div class="form-group w33 mgn-lft">
-                <label for='pin'>Pincode<span class="req">*</span></label>
-                <input class="form-control" id='pin'>
-              </div>
-              <div class="form-group w33" style='width:71%'>
-                <label for='address'>Permanent Address<span class="req">*</span></label>
-                <input class="form-control" id='address'>
-              </div>
-              <div class="form-group w33" style='float:left'>
-                <label for='city'>City<span class="req">*</span></label>
-                <input class="form-control" id='city'>
-              </div>
-              <div class="form-group w33 mgn-lft">
-                <label for='state'>State<span class="req">*</span></label>
-                <input class="form-control" id='state'>
-              </div>
-              <div class="form-group w33" style='float:left'>
-                <label for='country'>Country<span class="req">*</span></label>
-                <input class="form-control" id='country'>
-              </div>
-              <div class="form-group w33 mgn-lft">
-                <label for='pin'>Pincode<span class="req">*</span></label>
-                <input class="form-control" id='pin'>
-              </div>
-            </form>
+    <div id='page-content-wrapper'>
+      <div class='container-fluid'>
+        <div class="row">
+          <div class="col-md-12">
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+              <div class="icon menu1"> <span></span> <span></span> <span></span> </div>
+            </a>
+            <h2 class="pageheader">Basic Profile</h2>
+            <div class='row'>       
+              <form role='form' class='padding-20'>
+                <div class="form-group w33" style='float:left'>
+                  <label for='firstname'>FirstName<span class="req">*</span></label>
+                  <input class="form-control" id='firstname'>
+                </div>
+                <div class="form-group w33 mgn-lft">
+                  <label for='lastname'>Last Name<span class="req">*</span></label>
+                  <input class="form-control" id='lastname'>
+                </div>
+                <div class="form-group w33" style='float:left'>
+                  <label for='firstname'>Email<span class="req">*</span></label>
+                  <input class="form-control">
+                </div>
+                <div class="form-group w33 mgn-lft">
+                  <label for='mobile'>Mobile<span class="req">*</span></label>
+                  <input class="form-control" id='mobile'> 
+                </div>
+                <div class="form-group w33" style='width:71%'>
+                  <label for='address'>Present Address<span class="req">*</span></label>
+                  <input class="form-control" id='address'>
+                </div>
+                <div class="form-group w33" style='float:left'>
+                  <label for='city'>City<span class="req">*</span></label>
+                  <input class="form-control" id='city'>
+                </div>
+                <div class="form-group w33 mgn-lft">
+                  <label for='state'>State<span class="req">*</span></label>
+                  <input class="form-control" id='state'>
+                </div>
+                <div class="form-group w33" style='float:left'>
+                  <label for='country'>Country<span class="req">*</span></label>
+                  <input class="form-control" id='country'>
+                </div>
+                <div class="form-group w33 mgn-lft">
+                  <label for='pin'>Pincode<span class="req">*</span></label>
+                  <input class="form-control" id='pin'>
+                </div>
+                <div class="form-group w33" style='width:71%'>
+                  <label for='address'>Permanent Address<span class="req">*</span></label>
+                  <input class="form-control" id='address'>
+                </div>
+                <div class="form-group w33" style='float:left'>
+                  <label for='city'>City<span class="req">*</span></label>
+                  <input class="form-control" id='city'>
+                </div>
+                <div class="form-group w33 mgn-lft">
+                  <label for='state'>State<span class="req">*</span></label>
+                  <input class="form-control" id='state'>
+                </div>
+                <div class="form-group w33" style='float:left'>
+                  <label for='country'>Country<span class="req">*</span></label>
+                  <input class="form-control" id='country'>
+                </div>
+                <div class="form-group w33 mgn-lft">
+                  <label for='pin'>Pincode<span class="req">*</span></label>
+                  <input class="form-control" id='pin'>
+                </div>
+              </form>
+            </div>
+            <div class="next row">
+              <button class="btn btn-primary">Save</button>
+            </div>    
           </div>
         </div>
-        <div class="next">
-            <button class="btn btn-primary">Save</button>
-          </div>
       </div>
     </div>
   </div>
  
-  <div class="footer_bottom"> 
-      <div class="copy">
-      <p>Copyright © 2015 Seeking . All Rights Reserved . Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-    </div>
-    </div>
+  
+  </div>
 </body>
 </html>
  
