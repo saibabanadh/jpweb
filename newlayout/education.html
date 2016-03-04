@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive-tabs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.min.css">
+    <link href="assets/css/styles.css" rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Seeking</a> 
+            </div>
+            <div style="padding: 15px 50px 5px 50px;float: right;"> 
+                <a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
+            </div>
+        </nav>   
+        
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+    				<li class="text-center">
+                        <a href="#"><img src="assets/img/find_user.png" class="user-image img-responsive"/></a>
+    				</li>
+    				<li><a href="index.html"> Basic Profile</a></li>
+                    <li><a href="summary.html"> Summary</a></li>
+                    <li><a href="skills.html"> Skills</a></li>
+					<li><a href="project.html"> Projects</a></li>
+                    <li><a class="active-menu" href="education.html"> Education</a></li>	
+                    <li><a href="others.html"> Others</a></li>				
+    			</ul>
+            </div>
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Education</h2>
+                    </div>
+                </div>              
+                <hr />
+
+                <div id="responsiveTabsDemo">
+                    <ul>
+                        <li><a href="#tab-1">10th</a></li>
+                        <li><a href="#tab-2">12th</a></li>
+                        <li><a href="#tab-3">Graduation</a></li>
+                        <li><a href="#tab-4">Post Graduation</a></li>
+                        <li><a href="#tab-5">PhD/Doctorate</a></li>
+                        <li><a href="#tab-6">Others</a></li>
+                    </ul>
+                    <div id='tab-1'>  
+                        <form role='form'>
+                            <div class="form-group group">
+                                <label for='repeat'>10th:<span class="req">*</span></label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Specialization:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class='form-group' style='margin-left:15%'>
+                                <label class='radio-inline'><input type='radio' name='options' value='option1' checked>Regular</label>
+                                <label class='radio-inline'><input type='radio' name='options' value='option3'>Correspondance/Distance Learning</label>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>University/Institute:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Year of Passing:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Percentage: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>CGPA: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                        </form>
+                        <div class="next">
+                            <button class='btn btn-primary'>Save Changes</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+                    <div id="tab-2">
+                        <form role='form'>
+                            <div class="form-group group">
+                                <label for='repeat'>12th:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Specialization:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class='form-group' style='margin-left:15%'>
+                                <label class='radio-inline'><input type='radio' name='options' value='option1' checked>Regular</label>
+                                <label class='radio-inline'><input type='radio' name='options' value='option3'>Correspondance/Distance Learning</label>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>University/Institute:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Year of Passing:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Percentage: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>CGPA: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                        </form>
+                        <div class="next">
+                            <button class='btn btn-primary'>Save Changes</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+                    <div id="tab-3">
+                        <form role='form'>
+                            <div class="form-group group">
+                                <label for='repeat'>Graduation:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Specialization:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class='form-group' style='margin-left:15%'>
+                                <label class='radio-inline'><input type='radio' name='options' value='option1' checked>Regular</label>
+                                <label class='radio-inline'><input type='radio' name='options' value='option3'>Correspondance/Distance Learning</label>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>University/Institute:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Year of Passing:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Percentage: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>CGPA: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                        </form>
+                        <div class="next">
+                            <button class='btn btn-primary'>Save Changes</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+                    <div id="tab-4">
+                        <form role='form'>
+                            <div class="form-group group">
+                                <label for='repeat'>Post Graduation:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Specialization:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class='form-group' style='margin-left:15%'>
+                                <label class='radio-inline'><input type='radio' name='options' value='option1' checked>Regular</label>
+                                <label class='radio-inline'><input type='radio' name='options' value='option3'>Correspondance/Distance Learning</label>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>University/Institute:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Year of Passing:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Percentage: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>CGPA: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                        </form>
+                        <div class="next">
+                            <button class='btn btn-primary'>Save Changes</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+                    <div id='tab-5'>
+                        <form role='form'>
+                            <div class="form-group group">
+                                <label for='repeat'>PhD/Doctorate:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Specialization:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>  B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class='form-group' style='margin-left:15%'>
+                                <label class='radio-inline'><input type='radio' name='options' value='option1' checked>Regular</label>
+                                <label class='radio-inline'><input type='radio' name='options' value='option3'>Correspondance/Distance Learning</label>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>University/Institute:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Year of Passing:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Percentage: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>CGPA: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>  
+                        </form>
+                        <div class="next">
+                            <button class='btn btn-primary'>Save Changes</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+                    <div id='tab-6'>
+                        <form role='form'>
+                            <div class="form-group group">
+                                <label for='repeat'>Degree:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Specialization:<span class="req">*</span> </label>
+                                <select class='selectpicker' data-width='15%'>
+                                    <option>Select</option>
+                                    <option>B.A</option>
+                                    <option>B.Arch</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>  B.Com</option>
+                                    <option>B.Tech/B.E</option>
+                                </select>
+                            </div>
+                            <div class='form-group' style='margin-left:15%'>
+                                <label class='radio-inline'><input type='radio' name='options' value='option1' checked>Regular</label>
+                                <label class='radio-inline'><input type='radio' name='options' value='option3'>Correspondance/Distance Learning</label>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>University/Institute:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Year of Passing:<span class="req">*</span> </label>
+                                <input type='text' id='repeat' class='custom'>
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>Percentage: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                            <div class="form-group group">
+                                <label for='repeat'>CGPA: </label>
+                                <input type='text' id='repeat' class='custom'>                
+                            </div>
+                        </form>
+                        <div class="next">
+                            <button class='btn btn-primary'>Save Changes</button>
+                            <button class="btn">Cancel</button>
+                        </div>
+                    </div>
+               <!--  <form role='form' style='padding:0 12%;'>
+
+                    <div class="text-center">
+                        <a href="#" class="btn btn-default" style='margin-top:20px;'>Save Changes</a>
+                        <a href="#" class="btn btn-default" style='margin-top:20px;'>Cancel</a>
+                    </div>
+                </form> -->
+                </div>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+     
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.responsiveTabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+    $('#responsiveTabsDemo').responsiveTabs({
+      startCollapsed: 'accordion'
+    });
+    </script>
+    
+   
+</body>
+</html>

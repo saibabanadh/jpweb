@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Seeking</a> 
+            </div>
+            <div style="padding: 15px 50px 5px 50px;float: right;"> 
+                <a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
+            </div>
+        </nav>   
+        
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+    				<li class="text-center">
+                        <a href="#"><img src="assets/img/find_user.png" class="user-image img-responsive"/></a>
+    				</li>
+    				<li><a href="index.html"> Basic Profile</a></li>
+                    <li><a class="active-menu" href="summary.html"> Summary</a></li>
+                    <li><a href="skills.html"> Skills</a></li>
+					<li><a href="project.html"> Projects</a></li>
+                    <li><a href="education.html"> Education</a></li>	
+                    <li><a href="others.html"> Others</a></li>				
+    			</ul>
+            </div>
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Profile Summary</h2>
+                    </div>
+                </div>              
+                <hr />
+
+                <form role='form' class="form-padding">
+                    <div class="col-md-12">
+                        <h5>Your Profile Summary should mention the highlights of your career and education, what your professional interests are, and what kind of a 
+                        career you are looking for.</h5><br>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for='summary'>Profile Summary<span class="req">*</span></label>
+                            <textarea class="form-control" rows='12' id='summary'></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary" style='margin:20px 0 0 1%;'>Save Changes</a>
+                        <a href="#" class="btn btn-default" style='margin:20px 0 0 1%;'>Cancel</a>
+                    </div>
+                </form>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+     
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    
+   
+</body>
+</html>

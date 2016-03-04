@@ -18,8 +18,9 @@ ul.list_2 li{
   position: absolute;
   width: 210px;
   color: #e1ffff;
-  bottom: 0;
-  top: 80px;
+  height: 100%;
+  /*bottom: 0;
+  top: 80px;*/
 
 }
 .nav-side-menu .toggle-btn {
@@ -175,5 +176,4 @@ padding: 8px 4px;
 body {
   margin: 0px;
   padding: 0px;
-  position: relative;
 }
